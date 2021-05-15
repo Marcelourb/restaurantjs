@@ -1,0 +1,196 @@
+.lobster {
+  font-family: 'Lobster', cursive;
+}
+
+html, body {height:100%;}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid rgb(31, 48, 16);
+    background-color: rgb(31, 48, 16);
+  }
+  
+  .nav-a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 40px;
+    position: relative;
+    left: 150px;
+  }
+
+  .nav-b {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 40px;
+    position: relative;
+    right: 150px;
+  }
+  
+  li a.active {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+  }   
+  
+  #slogan {
+    position: relative;
+    top: 150px;
+    color: #e0e0e0;
+    text-align: center;
+    font-size: 50px;
+    float: center;
+  }
+  
+  .image {
+     background-image: url(../img/chalet.jpg); 
+     background-attachment: relative;
+     background-size: cover;
+     height: 80%;
+     position: static;
+  }
+
+  table, td, th {
+    border: 0.5px solid black;
+    float: unset;
+  }
+
+
+  th {
+      width: 300px;
+      height: 280px;
+      position: relative;
+      left: 50px;
+      border-collapse: collapse;
+      border: 1px solid black;
+  }
+
+  button {
+    background-color: rgb(92, 78, 19);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+  }
+
+  #loginb {
+    background-color: rgb(110, 172, 85);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 35px;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    padding: 15px;
+    height: 00%;
+  }
+
+  .columnleft {
+    background-color: rgb(31, 48, 16);
+    color: black;
+    border-radius: 50px;
+    height: 430%;
+    position: relative;
+  }
+
+  .footer {  
+    position: absolute;
+    width:100%;
+    background-color: rgb(51, 53, 53);
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+  }
+
+.btn {
+    background-color: rgb(110, 172, 85);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    left: 100px;
+  }
+
+  .btnl {
+    background-color: rgb(110, 172, 85);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 25px;
+    float: right;
+    top: -35px;
+  }
+
+  .btnm {
+    background-color: rgb(110, 172, 85);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 35px;
+    font-size: 15px;
+    position: relative;
+  }
+
+  em {
+    color: green;
+  }
+
+  .uinput {
+    vertical-align: middle; 
+    font-weight: bold; 
+    border: 1px solid; 
+    padding: 0; 
+    width:100px
+  }
+
+  .uinput2 {
+    vertical-align: middle; 
+    font-weight: bold; 
+    border: 1px solid; 
+    padding: 0; 
+    width: 180px;
+  }
+
+  .login{
+    font-size: larger;
+    position: relative;
+    
+  }
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+.columng {
+  position: relative;
+  float: right;
+  width: 70%;
+  padding: 15px;
+}
+
+.gallery {
+  columns: 80%;
+  float: right;
+}

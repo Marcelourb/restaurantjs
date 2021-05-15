@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap JS, JQuery, Font Awesome & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7eb80dbd06.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title>Mountain Gate</title>
+</head>
+<body>
+
+<!---------------------------------------------------- Navbar ------------------------------------------------->
+
+  <ul class="navbar lobster">
+    <li><a href="index.html"><img id="mountainlogo" src="img/mtngatelogo.png" width="50%" height="50%"></a></li>
+    <li class="nav-a"><a class="active" href="index.html">Home</a></li>
+    <li class="nav-b" ><a href="about.html" style="color: black;">About</a></li>
+  </ul>
+
+
+<!------------------------------------------------- Title Page ------------------------------------------------->
+
+  <div class="image">
+  <strong class="text-center"><h1 id="slogan" class="lobster animate__animated animate__fadeInRight">" Welcome to the Mountain Gate!</h1>
+   <br><h1 id="slogan" class="lobster animate__animated animate__fadeInLeft">Where travellers come in </h1><br>
+   <h1 id="slogan" class="lobster animate__animated animate__fadeInRight">to have a break. "</h1></strong>
+  </div>
+
+<hr>
+  
+<div class="columnleft column">
+
+<!----------------------------------------------------- Login ------------------------------------------------->
+
+        <form class="container-fluid form-padding">
+             <h2 class="text-center lobster">Staff password validator</h2>
+             <br>
+             <label for="username" class="form-label lobster login">&nbsp&nbsp&nbsp&nbsp Username &nbsp</label>
+             <input type="text" id="username" class="uinput2"><br>
+             <label for="password" class="form-label lobster login">&nbsp&nbsp&nbsp&nbsp Password &nbsp&nbsp</label>
+             <input type="password" id="password"  class="uinput2" aria-describedby="password-info">
+             <button type="submit" class="btnl lobster" onclick="welcome()">Login</button>
+             <br>
+          <div id="password-info" class="form-text">
+            <h6>Your password must have at least:</h6>
+            <ul>
+              <li id="letter" class="invalid"><strong>One letter</strong></li>
+              <li id="capital" class="invalid"><strong>One capital letter</strong></li>
+              <li id="number" class="invalid"><strong>One number</strong></li>
+              <li id="symbol" class="invalid"><strong>One special character</strong></li>
+              <li id="length" class="invalid"><strong>8 characters</strong></li>
+            </ul>
+          </div>   
+        </form>
+      
+    <br><br>
+
+<!------------------------------------------- User customer generator ----------------------------------------->
+
+     <h1 class="lobster text-center">Customers</h1>
+     <br><br>
+       <div>
+       <button class="btn lobster" id="user-button">Generate Users</button><br><br>
+       <div id="output"></div>
+       </div>
+
+</div>
+
+<!------------------------------------------------------ Menu ------------------------------------------------->
+
+ <div class="text-center">
+
+<section id="menu">
+  <div class="container-fluid">
+    <h1 class="text-center lobster" style="font-size: 75px;">Our Menu</h1>
+    <br><br>
+    <h3 class="lobster" style="font-size: 35px;">Starters</h3>
+
+    <div class="column shop-items row">
+
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/sspie.jpg" width="45%" height="45%">
+        <p class="shop-item-title"><strong>Spiced Lentil & Spinach pie</strong></p>
+        <div class="shop-item-details">
+          <p>A vegetarian pie with a spiced pastry glaze and surprise chutney middle.</p>
+          <p><em> Suitable for vegetarians</em></p>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€5.51</strong></p>
+            </div><br><br><br><br>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/bruschetta.jpg"  width="55%" height="55%">
+        <p class="shop-item-title"><strong>Bruschetta</strong></p>
+        <div class="shop-item-details">
+          <p>A simple tomato bruschetta as a classic Italian starter.</p>
+          <br>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€4.49</strong></p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+    </div>
+    
+      <div class="column shop-items row">
+        
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/applesoup.jpg" width="50%" height="45%">
+        <p class="shop-item-title"><strong>Apple Soup</strong></p>
+        <div class="shop-item-details">
+          <p>This delicious parsnip and apple soup perfectly combines tangy cooking apples and the sweetness from parsnips.</p>
+          <p><em> Suitable for vegetarians</em></p>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€4.89</strong></p>
+            </div>
+            <br><br><br><br>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/garlicbread.jpg" width="50%" height="55%">
+        <p class="shop-item-title"><strong>Cheesy Garlic Bread</strong></p>
+        <div class="shop-item-details">
+          <p>A delicious Garlic Bread topped with cheese.</p>
+          <br>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€3.89</strong></p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <h3 class="lobster" style="font-size: 35px;">Main Course</h3>
+
+    <div class="column shop-items row">
+      
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/burger.jpg" width="52%" height="52%">
+        <p class="shop-item-title"><strong>Mountain Gate Burger</strong></p>
+        <div class="shop-item-details">
+          <p>Angus burger with bacon, cheddar, a special homemade sauce in a charcoal bun.</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€9.89</strong></p>
+            </div><br><br><br><br>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+      </div><div class="shop-item">
+
+        <img class="shop-item-image" src="img/ribsteak.jpg" width="52%" height="50%">
+        <p class="shop-item-title"><strong>Rib-Eye Steak</strong></p>
+        <div class="shop-item-details">
+          <p>Marbled, thick-cut rib-eye steak served with rustic potatoes, basil and Garlic sauce.</p>
+          <br>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€12.99</strong></p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <div class="column shop-items row">
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/veggieburger.jpg" width="45%" height="45%">
+        <p class="shop-item-title"><strong>Veggie Mountain Gate Burger</strong></p>
+        <div class="shop-item-details">
+          <p>Spiced Lentil Walnut Burger with Rocket leaves, red onion, tomato, pickles and a special hummus.</p>
+          <br>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€9.49</strong></p>
+            </div><br><br>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/salmon.jpg" width="55%" height="55%">
+        <p class="shop-item-title"><strong>Salmon</strong></p>
+        <div class="shop-item-details">
+          <p>Salmon with herbs and lime, served with rustic potatoes and salad.</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€11.89</strong></p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <h3 class="lobster" style="font-size: 35px;">Dessert</h3>
+    
+    <div class="column shop-items row">
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/applepie.jpg" width="55%" height="50%">
+        <p class="shop-item-title"><strong>Apple pie</strong></p>
+        <div class="shop-item-details">
+          <p>A delicious homemade apple pie.</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€4.69</strong></p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/cheesecake.jpg" width="50%" height="45%">
+        <p class="shop-item-title"><strong>Chia Rasberry Cheesecake</strong></p>
+        <p>A delicious vegetarian homemade Cheesecake topped with chia and rasberry.</p>
+        <p><em> Suitable for vegetarians</em></p>
+        <div class="shop-item-details">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€4.69</strong></p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      <div class="column shop-items row">
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/chocolatecake.jpg" width="55%" height="55%">
+        <p class="shop-item-title"><strong>Chocolate cake</strong></p>
+        <p>A piece of chocolate cake.</p>
+        <div class="shop-item-details">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€4.89</strong></p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/kinderbueno.jpeg" width="50%" height="50%">
+        <p class="shop-item-title"><strong>Kinder Bueno</strong></p>
+        <p>Crunchy hazelnut honeycomb with salted caramel ice cream.</p>
+        <div class="shop-item-details">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€6.49</strong></p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <h3 class="lobster" style="font-size: 35px;">Drinks</h3>
+    
+    <div class="column shop-items row">
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/coke.jpg" width="50%" height="55%">
+        <p class="shop-item-title"><strong>Coke can 330ml</strong></p>
+        <br>
+        <div class="shop-item-details">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€2.50</strong></p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/orangejuice.jpg" width="55%" height="55%">
+        <p class="shop-item-title"><strong>Orange Juice 350ml</strong></p>
+        <br>
+        <div class="shop-item-details">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€2.50</strong></p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      <div class="column shop-items row">
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/beer.jpg" width="53.5%" height="55%">
+        <p class="shop-item-title"><strong>Mountain Gate Beer 500ml</strong></p>
+        <br>
+        <div class="shop-item-details">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€5.90</strong></p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="img/milkshake.jpg" width="50%" height="50%">
+        <p class="shop-item-title"><strong>Stawberry Milk Shake 350ml</strong></p>
+        <br>
+        <div class="shop-item-details">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="shop-item-price"><strong>€3.80</strong></p>
+            </div>
+            <div class="col-lg-6">
+              <button class="btnm btn-outline-primary lobster shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+
+<!------------------------------------------------------ Cart ------------------------------------------------->
+
+
+<section id="cart">
+  <div>
+    <h2 class="section-title cart lobster" style="font-size: 35px;">CART</h2>
+    <div class="cart-row">
+      <span class="cart-item cart-header cart-column">ITEM</span>
+      <span class="cart-price cart-header cart-column">PRICE</span>
+      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+      <p class="cart-total-title"><strong>Total: </strong><span class="cart-total-price">€0</span></p>
+    </div>
+    <div>
+      <button class="btnm btn-outline-primary btn-purchase" type="button">COMPLETE ORDER</button>
+    </div>
+  </div>
+</section>
+
+
+</div>
+
+<!---------------------------------------------------- Footer ------------------------------------------------->
+
+<br><br>
+   <div>
+        <footer class="footer">
+        <a href="index.html"><img id="mountainlogo" src="img/mtngatelogo.png"></a><br>
+        <h4>2021</h4>
+        </footer>
+    </div> 
+  
+<!--------------------------------------------- API Users generator ------------------------------------------->
+
+  <script>
+    // Button to display the API users.
+    document.getElementById('user-button').addEventListener('click', getData);
+    
+    function getData() {
+    
+        // Get random API user.
+        fetch('https://randomuser.me/api/?results=6')
+            .then(res => res.json())
+            .then(data => {
+    
+                let author = data.results;
+    
+                // Output a message to welcome them.
+                let output = "<h2><center>Welcome to Mountain Gate!</center></h2>";
+    
+                // Get data from the API to display the customer's name, phone number, email, address and a profile pic.
+                author.forEach(function (lists) {
+                    output += `
+                    <div class="container">
+                        <div class="card mt-4 bg-light">
+                            <ul class="list-group">
+                                <li class="list-group-item"><h4><strong>Name:</strong> ${lists.name.first} ${lists.name.last}</h4></li>
+                                <li class="list-group-item"><img src="${lists.picture.large}"></li>
+                                <li class="list-group-item"><strong>Phone Number:</strong> ${lists.cell}</li>
+                                <li class="list-group-item"><strong>Email:</strong> ${lists.email}</li>
+                                <li class="list-group-item"><strong>Address:</strong> ${lists.location.city}, ${lists.location.country} | <strong>Post Code:</strong> ${lists.location.postcode}</li>
+                            </ul>
+                        </div>
+                    </div> `;
+                });
+    
+                // Show all data received within the HTML element.
+                document.getElementById('output').innerHTML = output;
+    
+            });
+    };
+  </script>
+
+</body>
+</html>
